@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/theomen"
+    tools:context="com.example.thandiwe.report.StudentActivity" >
+
+    <EditText
+        android:id="@+id/etSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Surname"
+        android:layout_below="@+id/etName"
+        android:layout_alignLeft="@+id/etName"
+        android:layout_alignStart="@+id/etName"
+        android:layout_marginTop="17dp" />
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="42dp"
+        android:ems="10"
+        android:hint="Name"/>
+
+
+
+    <EditText
+        android:id="@+id/etMark1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mark1"
+        android:layout_below="@+id/etSurname"
+        android:layout_alignLeft="@+id/etSurname"
+        android:layout_alignStart="@+id/etSurname"
+        android:layout_marginTop="23dp" />
+
+
+    <EditText
+        android:id="@+id/etMark2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mark2"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/etMark3"
+        android:layout_alignStart="@+id/etMark3" />
+
+
+    <EditText
+        android:id="@+id/etMark3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Mark3"
+        android:layout_above="@+id/button1"
+        android:layout_alignLeft="@+id/etMark1"
+        android:layout_alignStart="@+id/etMark1"
+        android:layout_marginBottom="98dp">
+
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="addPerson"
+        android:text="@string/add"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginBottom="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/etMark1"
+        android:layout_alignStart="@+id/etMark1" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_toEndOf="@+id/button1"
+        android:layout_toRightOf="@+id/button1"
+        android:onClick="Back"
+        android:text="Back" />
+
+</RelativeLayout>
